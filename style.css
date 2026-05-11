@@ -10,3 +10,51 @@ img {
     margin: 20px;
     border-radius: 10px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f1923, #1a2332, #0f1923);
+  background-size: 400% 400%;
+  animation: valorantBG 12s ease infinite;
+  font-family: 'Montserrat', sans-serif;
+  color: #ece8e1;
+}
+
+@keyframes valorantBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional: Valorant red accent for headings */
+h1, h2 {
+  color: #ff4655;
+  text-shadow: 0 0 10px #ff4655;
+}
+
+/* Optional: Make roast text fit the theme */
+.roasts {
+  color: #ece8e1;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.roasts p:hover {
+  color: #ff4655;
+  text-shadow: 0 0 10px #ff4655;
+  transition: 0.3s;
+}
+.image-container img {
+  border: 3px solid #ff4655; /* Valorant red */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff4655;
+  transition: 0.3s ease;
+}
+
+/* Glow intensifies on hover */
+.image-container img:hover {
+  box-shadow: 0 0 25px #ff4655, 0 0 40px #ff4655;
+  transform: scale(1.05);
+}
