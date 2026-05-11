@@ -4,6 +4,19 @@
     <title>jacob</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <audio id="agentSound" src="agent-select.mp3"></audio>
+
+<script>
+  const sound = document.getElementById("agentSound");
+  const images = document.querySelectorAll(".image-container img");
+
+  images.forEach(img => {
+    img.addEventListener("mouseenter", () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  });
+</script>
 <body>
     <h1>Jacob Roast Site</h1>
     <p>Welcome to the official Jacob roast website.</p>
